@@ -1,0 +1,765 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../Csave/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
+    
+    
+      
+        <title>Cnote - SpringRain</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4b4a2bd9.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#c" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="SpringRain" class="md-header__button md-logo" aria-label="SpringRain" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SpringRain
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Cnote
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SpringRain" class="md-nav__button md-logo" aria-label="SpringRain" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    SpringRain
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Cnote
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Cnote
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    一、运算符
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    二、随机数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    三、数组与指针
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    四、数据类型及自变量
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    五、结构类型
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    六、标识符与关键字
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    七、数据类型关键字
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    八、流程控制关键字
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Csave/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Csave
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Function
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    一、运算符
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    二、随机数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    三、数组与指针
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    四、数据类型及自变量
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    五、结构类型
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    六、标识符与关键字
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    七、数据类型关键字
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    八、流程控制关键字
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="c">C</h1>
+<h2 id="_1">一、运算符</h2>
+<ul>
+<li>优先级</li>
+</ul>
+<p><img alt="优先级.png" src="../img/precedence.png" /></p>
+<ul>
+<li>
+<p><strong>逗号</strong></p>
+<p>用来连接两个表达式，右边表达式作为它的结果，逗号的组合关系是从左到右，所以左边表达式先计算，右边表达式的值留下来作为逗号运算的结果</p>
+</li>
+<li>
+<p><strong>&amp;&amp;与||</strong></p>
+<p>对于&amp;&amp;，左边是false时就不做右边
+对于||，左边是true就不做右边</p>
+</li>
+<li>
+<p><strong>?:</strong></p>
+<p>count = (count&gt;20)?count -10 : count+10;
+true则count -10 false则count+10</p>
+</li>
+<li>
+<p><strong>switch</strong></p>
+<ul>
+<li>如果执行完分支中最后一条语句后，若后边无break，就是按顺序执行到下面的case，直到遇到一个break，或者switch结束为止<div class="codehilite"><pre><span></span><code><span class="err">```</span><span class="nx">c</span>
+<span class="nx">switch</span><span class="p">(</span><span class="k">type</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
+<span class="w">        </span><span class="nx">printf</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
+<span class="w">        </span><span class="nx">printf</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">4</span><span class="p">:</span>
+<span class="w">        </span><span class="nx">printf</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">default</span><span class="p">:</span>
+<span class="w">        </span><span class="nx">printf</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="err">```</span>
+</code></pre></div>
+
+</li>
+</ul>
+</li>
+<li>
+<p><strong>sizheof</strong></p>
+<ul>
+<li>
+<p>语法</p>
+<p><img alt="sizeof" src="../img/sizeof.png" /></p>
+</li>
+<li>
+<p>sizeof是<strong>静态运算符(</strong>不是函数!)sizeof(a++)中++无任何作用</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="_2">二、随机数</h2>
+<div class="codehilite"><pre><span></span><code>```<span class="nv">c</span>
+#<span class="k">include</span><span class="o">&lt;</span><span class="nv">stdio</span>.<span class="nv">h</span><span class="o">&gt;</span>
+#<span class="k">include</span><span class="o">&lt;</span><span class="nv">stdlib</span>.<span class="nv">h</span><span class="o">&gt;</span>
+#<span class="k">include</span><span class="o">&lt;</span><span class="nv">time</span>.<span class="nv">h</span><span class="o">&gt;</span>
+
+<span class="nv">int</span><span class="w"> </span><span class="nv">main</span><span class="ss">()</span>
+{
+<span class="w">    </span><span class="nv">srand</span><span class="ss">(</span><span class="nv">time</span><span class="ss">(</span><span class="mi">0</span><span class="ss">))</span><span class="c1">;</span>
+<span class="w">    </span><span class="nv">int</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">rand</span><span class="ss">()</span><span class="c1">;</span>
+
+<span class="w">    </span><span class="o">//</span><span class="nv">a</span>为随机数
+}
+</code></pre></div>
+
+<h2 id="_3">三、数组与指针</h2>
+<div class="codehilite"><pre><span></span><code><span class="o">-</span><span class="w"> </span><span class="err">二维数组的初始化</span>
+
+<span class="w">    </span><span class="err">```</span><span class="n">c</span>
+<span class="w">    </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">a</span><span class="p">[][</span><span class="mi">5</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">},{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">},}</span>
+<span class="w">    </span><span class="err">```</span>
+
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="err">列数必须给出，行数可以由编译器来数</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="err">最后的逗号可以存在</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="err">如果省略，表示补零</span>
+<span class="o">-</span><span class="w"> </span><span class="err">从特定部位开始初始</span>
+
+<span class="w">    </span><span class="err">```</span><span class="n">c</span>
+<span class="w">    </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">,[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">};</span>
+<span class="w">    </span><span class="err">```</span>
+
+<span class="w">    </span><span class="err">没有定位的数据接在前面的位置后面，其他位置的值补零</span>
+
+<span class="o">-</span><span class="w"> </span><span class="err">数组变量是特殊的指针</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="err">数组变量本身表达地址所以</span>
+<span class="w">        </span><span class="o">-</span><span class="w"> </span><span class="err">`</span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span><span class="nb nb-Type">int</span><span class="o">*</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="n">a</span><span class="err">`</span><span class="o">//</span><span class="err">无需用</span><span class="o">&amp;</span><span class="err">取地址</span>
+<span class="w">        </span><span class="o">-</span><span class="w"> </span><span class="err">`</span><span class="n">a</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="o">&amp;</span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="err">`</span><span class="w">  </span><span class="o">//</span><span class="err">每个数组单元需要取</span><span class="o">&amp;</span>
+<span class="w">        </span><span class="o">-</span><span class="w"> </span><span class="err">`</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="err">`</span>
+<span class="w">        </span><span class="o">-</span><span class="w"> </span><span class="err">`</span><span class="o">*</span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">25</span><span class="err">`</span>
+<span class="w">        </span><span class="o">-</span><span class="w"> </span><span class="err">`</span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">a</span><span class="p">[]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="o">*</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">a</span><span class="err">`</span><span class="w"> </span><span class="err">数组是</span><span class="n">const的指针</span><span class="err">，所以不能被赋值</span>
+<span class="o">-</span><span class="w"> </span><span class="err">数组参数</span>
+
+<span class="w">    </span><span class="err">以下四种函数原型是等价的</span>
+
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">sum</span><span class="p">(</span><span class="nb nb-Type">int</span><span class="w"> </span><span class="o">*</span><span class="n">ar</span><span class="p">,</span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">n</span><span class="p">);</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">sum</span><span class="p">(</span><span class="nb nb-Type">int</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="nb nb-Type">int</span><span class="p">);</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">sum</span><span class="p">(</span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">ar</span><span class="p">[],</span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">n</span><span class="p">);</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">sum</span><span class="p">(</span><span class="nb nb-Type">int</span><span class="w"> </span><span class="p">[],</span><span class="nb nb-Type">int</span><span class="p">);</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">fun</span><span class="p">(</span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span><span class="w"> </span><span class="err">酱紫也可以运行</span>
+<span class="o">-</span><span class="w"> </span><span class="n">conts</span><span class="w"> </span><span class="n">who及应用</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="o">*</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">q</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">i</span><span class="p">;</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="n">q</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="k">const</span>
+<span class="w">    </span><span class="o">*</span><span class="n">q</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">26</span><span class="p">;</span><span class="w"> </span>
+<span class="w">    </span><span class="n">q</span><span class="o">++</span><span class="p">;</span><span class="w"> </span><span class="o">//</span><span class="n">ERROR</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="o">*</span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">i</span><span class="p">;</span><span class="w"> </span><span class="err">表示不能通过这个指针去修改那个变量</span>
+<span class="w">    </span><span class="o">*</span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">26</span><span class="o">//</span><span class="n">ERROR</span>
+<span class="w">    </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">26</span><span class="p">;</span>
+<span class="w">    </span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">j</span><span class="p">;</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="err">综上，判断哪个被</span><span class="n">const了的标志是const在</span><span class="o">*</span><span class="err">的前边还是后边</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="o">**</span><span class="err">应用</span><span class="o">**</span><span class="p">:</span><span class="err">保护数组值</span>
+<span class="w">    </span><span class="err">因为把数组传入函数时传递的是地址，所以那个函数内部可以修改数组的值。</span>
+<span class="w">    </span><span class="err">为了保护数组不被函数破坏，可以设置参数为</span><span class="k">const</span>
+<span class="w">    </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">sum</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">a</span><span class="p">[],</span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">length</span><span class="p">)</span>
+<span class="o">-</span><span class="w"> </span><span class="err">指针类型的转换</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="nb nb-Type">void</span><span class="o">*</span><span class="w"> </span><span class="err">表示不知道指向什么东西的指针</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="err">指针也可以转换类型</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="err">`</span><span class="nb nb-Type">int</span><span class="o">*</span><span class="w"> </span><span class="o">*</span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">i</span><span class="p">;</span><span class="nb nb-Type">void</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="n">q</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nb nb-Type">void</span><span class="o">**</span><span class="p">)</span><span class="n">p</span><span class="err">`</span><span class="o">*</span><span class="w">  </span><span class="err">此时没有改变</span><span class="n">p所指变量的类型</span><span class="err">，而是让后人用不同眼光通过</span><span class="n">p看它所指的变量</span>
+<span class="w">        </span><span class="o">-</span><span class="w"> </span><span class="err">我不再当你是</span><span class="n">int啦</span><span class="err">，我认为你就是个</span><span class="nb nb-Type">void</span>
+<span class="o">-</span><span class="w"> </span><span class="err">二级指针</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="nb">char</span><span class="w"> </span><span class="o">**</span><span class="n">a</span><span class="w">   </span><span class="n">a是一个指针</span><span class="err">，指向另一个指针</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="nb">char</span><span class="w"> </span><span class="n">a</span><span class="p">[][]</span><span class="w"> </span><span class="err">≠</span><span class="w"> </span><span class="nb">char</span><span class="w"> </span><span class="o">*</span><span class="n">a</span><span class="p">[]</span>
+
+<span class="w">        </span><span class="err">```</span><span class="n">c</span>
+<span class="w">        </span><span class="nb">char</span><span class="w"> </span><span class="n">a</span><span class="p">[][]</span><span class="mi">10</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span><span class="s2">&quot;World&quot;</span><span class="p">};</span>
+<span class="w">        </span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="nb">char</span><span class="w"> </span><span class="p">[</span><span class="mi">10</span><span class="p">]</span>
+<span class="w">        </span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w">    </span><span class="p">[</span><span class="n">Hello</span>\<span class="mi">0</span><span class="p">]</span>
+<span class="w">        </span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w">    </span><span class="p">[</span><span class="n">World</span>\<span class="mi">0</span><span class="p">]</span>
+
+<span class="w">        </span><span class="nb">char</span><span class="w"> </span><span class="o">*</span><span class="n">a</span><span class="p">[]</span>
+<span class="w">        </span><span class="n">a</span><span class="p">[]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="p">[]</span><span class="w"> </span><span class="p">[]</span><span class="err">内的东西指向外面某处</span><span class="p">[</span><span class="n">Hello</span>\<span class="mi">0</span><span class="p">]</span><span class="err">等</span>
+<span class="w">        </span><span class="err">```</span>
+</code></pre></div>
+
+<h2 id="_4">四、数据类型及自变量</h2>
+<div class="codehilite"><pre><span></span><code><span class="k">-</span> *字节大小*
+    <span class="k">-</span> int ：4个字节
+    <span class="k">-</span> char：1个字节
+    <span class="k">-</span> double 8个字节
+    <span class="k">-</span> short 2个字节
+    <span class="k">-</span> 一个字节的数据大小范围为什么是-128~127
+        <span class="k">-</span> 一个字节是8位，最高位是符号位，最高位为0则是正数。最高位为1则是负数
+        <span class="k">-</span> 如果一个数是正数，最大数则为：01111111，转为十[进制](https://so.csdn.net/so/search?q=%E8%BF%9B%E5%88%B6&amp;spm=1001.2101.3001.7020)为127，
+        <span class="k">-</span> **但是**：一个+0表示为：00000000，一个-0表示为：1000000，因为符号位不算在里面，所以就会有两个0，所以从一开始发明[二进制](https://so.csdn.net/so/search?q=%E4%BA%8C%E8%BF%9B%E5%88%B6&amp;spm=1001.2101.3001.7020)的时候，就把-0规定为-128，如此二进制的补码就刚好在计算机中运作中吻合。（这是国内教材中的解释）
+<span class="k">-</span> *整形*
+    <span class="k">-</span> 123表示十进制123
+    <span class="k">-</span> 0123是八进制表示方法 为83
+    <span class="k">-</span> 0x123是十六进制的表示方法，为291
+<span class="k">-</span> *字符型*
+    <span class="k">-</span> 同时 在引号里有转义的效果，比如 &#39;\n&#39; &#39;\t&#39; 都代表一个字符，而 &#39;\\&#39; 才会表示一个 字符；
+    <span class="k">-</span> 再进一步， 后面可以接最多三个数字来使用八进制表示一个字节，且遇到 0-7 范围之外的数字会结束当前字节，比如 &#39;\101&#39; 也表示 &#39;A&#39;，而 &#39;\08&#39; 因为 8 超过了八进制范围，所以这是两个字符放到了一个单引号里，不是正确的用法，如果写成字符串，则 &quot;\08&quot; 表示两个字符；
+</code></pre></div>
+
+<h2 id="_5">五、结构类型</h2>
+<ul>
+<li><em>枚举(不常用)</em><ul>
+<li>格式: enum 枚举类型名字{名字0,….名字n};</li>
+<li>大括号内是常量符号，类型为int,值依次从0到n</li>
+</ul>
+</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="k">enum</span><span class="w"> </span><span class="n">colors</span><span class="w"> </span><span class="p">{</span><span class="n">red</span><span class="p">,</span><span class="n">yellow</span><span class="p">,</span><span class="n">green</span><span class="p">};</span>
+<span class="k">enum</span><span class="w"> </span><span class="n">colors</span><span class="p">(</span><span class="n">red</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">yellow</span><span class="p">,</span><span class="n">green</span><span class="o">=</span><span class="mi">5</span><span class="p">);</span>
+</code></pre></div>
+
+<ul>
+<li><em>结构</em></li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="w">    </span><span class="k">struct</span>
+<span class="w">    </span><span class="p">{</span>
+
+<span class="w">    </span><span class="p">}</span>
+</code></pre></div>
+
+<h2 id="_6">六、标识符与关键字</h2>
+<div class="codehilite"><pre><span></span><code><span class="k">-</span> C语言的标识符由字母、数字、下划线组成，并且第一个字符必须是字母或下划线，不能是数字。在标识符中，字母的大小写是有区别的，例如BOOK与book是两个不同的标识符。C语言关键字不可以用做标识符
+
+<span class="k">-</span> **关键字**
+</code></pre></div>
+
+<h2 id="_7">七、数据类型关键字</h2>
+<p><strong>A基本数据类型（5个）</strong></p>
+<div class="codehilite"><pre><span></span><code>- void：声明函数无返回值或无参数，声明无类型指针，显式丢弃运算结果
+- char：字符型类型数据，属于整型数据的一种
+- int：整型数据，通常为编译器指定的机器字长
+- float：单精度浮点型数据，属于浮点数据的一种
+- double：双精度浮点型数据，属于浮点数据的一种
+</code></pre></div>
+
+<p><strong>B类型修饰关键字（4个）</strong></p>
+<div class="codehilite"><pre><span></span><code>- short：修饰int，短整型数据，可省略被修饰的int。
+- long：修饰int，长整形数据，可省略被修饰的int。
+- signed：修饰整型数据，有符号数据类型
+- unsigned：修饰整型数据，无符号数据类型
+</code></pre></div>
+
+<p><strong>C复杂类型关键字（5个）</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="o">-</span><span class="w"> </span><span class="n">struct</span><span class="err">：结构体声明</span>
+<span class="o">-</span><span class="w"> </span><span class="n">union</span><span class="err">：共用体声明</span>
+<span class="o">-</span><span class="w"> </span><span class="k">enum</span><span class="err">：枚举声明</span>
+<span class="o">-</span><span class="w"> </span><span class="n">typedef</span><span class="err">：声明类型别名</span>
+<span class="o">-</span><span class="w"> </span><span class="n">sizeof</span><span class="err">：得到特定类型或特定类型变量的大小</span>
+</code></pre></div>
+
+<p><strong>D存储级别关键字（6个）</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="o">-</span><span class="w"> </span><span class="n">auto</span><span class="err">：指定为自动变量，由编译器自动分配及释放。通常在栈上分配</span>
+<span class="o">-</span><span class="w"> </span><span class="k">static</span><span class="err">：指定为静态变量，分配在静态变量区，修饰函数时，指定函数作用域为文件内部</span>
+<span class="o">-</span><span class="w"> </span><span class="n">register</span><span class="err">：指定为寄存器变量，建议编译器将变量存储到寄存器中使用，也可以修饰函数形参，建议编译器通过寄存器而不是堆栈传递参数</span>
+<span class="o">-</span><span class="w"> </span><span class="n">extern</span><span class="err">：指定对应变量为外部变量，即在另外的目标文件中定义，可以认为是约定由另外文件声明的对象的一个“引用“</span>
+<span class="o">-</span><span class="w"> </span><span class="k">const</span><span class="err">：与</span><span class="n">volatile合称</span><span class="err">“</span><span class="n">cv特性</span><span class="err">”，指定变量不可被当前线程</span><span class="o">/</span><span class="err">进程改变（但有可能被系统或其他线程</span><span class="o">/</span><span class="err">进程改变）</span>
+<span class="o">-</span><span class="w"> </span><span class="n">volatile</span><span class="err">：与</span><span class="n">const合称</span><span class="err">“</span><span class="n">cv特性</span><span class="err">”，指定变量的值有可能会被系统或其他进程</span><span class="o">/</span><span class="err">线程改变，强制编译器每次从内存中取得该变量的值</span>
+</code></pre></div>
+
+<h2 id="_8">八、流程控制关键字</h2>
+<div class="codehilite"><pre><span></span><code><span class="w">    </span><span class="o">**</span><span class="n">A跳转结构</span><span class="err">（</span><span class="mi">4</span><span class="err">个）</span><span class="o">**</span>
+
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="kr">return</span><span class="err">：用在函数体中，返回特定值（或者是</span><span class="n">void值</span><span class="err">，即不返回值）</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">continue</span><span class="err">：结束当前循环，开始下一轮循环</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">break</span><span class="err">：跳出当前循环或</span><span class="n">switch结构</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">goto</span><span class="err">：无条件跳转语句</span>
+
+<span class="w">    </span><span class="o">**</span><span class="n">B分支结构</span><span class="err">（</span><span class="mi">5</span><span class="err">个）</span><span class="o">**</span>
+
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="nf">if</span><span class="err">：条件语句</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">else</span><span class="err">：条件语句否定分支（与</span><span class="n">if连用</span><span class="err">）</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">switch</span><span class="err">：开关语句（多重分支语句）</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="kr">case</span><span class="err">：开关语句中的分支标记</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">default</span><span class="err">：开关语句中的“其他”分治，可选。</span>
+
+<span class="w">    </span><span class="o">**</span><span class="n">C循环结构</span><span class="err">（</span><span class="mi">3</span><span class="err">个）</span><span class="o">**</span>
+
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">for</span><span class="err">：</span><span class="n">for循环结构</span><span class="err">，</span><span class="n">for</span><span class="p">(</span><span class="mi">1</span><span class="p">;</span><span class="mi">2</span><span class="p">;</span><span class="mi">3</span><span class="p">)</span><span class="mi">4</span><span class="p">;</span><span class="err">的执行顺序为</span><span class="mi">1</span><span class="o">-&gt;</span><span class="mi">2</span><span class="o">-&gt;</span><span class="mi">4</span><span class="o">-&gt;</span><span class="mi">3</span><span class="o">-&gt;</span><span class="mf">2.</span><span class="p">..</span><span class="err">循环，其中</span><span class="mi">2</span><span class="err">为循环条件</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">do</span><span class="err">：</span><span class="n">do循环结构</span><span class="err">，</span><span class="n">do</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="n">while</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span><span class="err">的执行顺序是</span><span class="mi">1</span><span class="o">-&gt;</span><span class="mi">2</span><span class="o">-&gt;</span><span class="mf">1.</span><span class="p">..</span><span class="err">循环，</span><span class="mi">2</span><span class="err">为循环条件</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">while</span><span class="err">：</span><span class="n">while循环结构</span><span class="err">，</span><span class="n">while</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="err">的执行顺序是</span><span class="mi">1</span><span class="o">-&gt;</span><span class="mi">2</span><span class="o">-&gt;</span><span class="mf">1.</span><span class="p">..</span><span class="err">循环，</span><span class="mi">1</span><span class="err">为循环条件</span>
+
+<span class="w">    </span><span class="err">以上循环语句，当循环条件表达式为真则继续循环，为假则跳出循环。</span>
+</code></pre></div>
+
+<ul>
+<li><strong>字符串</strong><ul>
+<li>输入和输出<ul>
+<li>putchar</li>
+<li>getchar  返回类型为 int</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.81fa17fe.min.js"></script>
+      
+    
+  </body>
+</html>
