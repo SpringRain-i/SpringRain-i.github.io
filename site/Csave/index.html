@@ -1,0 +1,588 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Cnote/">
+      
+      
+        <link rel="next" href="../Function/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
+    
+    
+      
+        <title>Csave - SpringRain</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4b4a2bd9.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#code-save" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="SpringRain" class="md-header__button md-logo" aria-label="SpringRain" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SpringRain
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Csave
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SpringRain" class="md-nav__button md-logo" aria-label="SpringRain" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    SpringRain
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cnote/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cnote
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Csave
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Function
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="code-save">code save</h1>
+<h1 id="rethink">rethink</h1>
+<ol>
+<li>先整理清思路，分模块步步完成。</li>
+<li>循环内重复使用的数据要在下一次循环前格式化</li>
+<li>if( == ) not if( = ) ,scanf(”%lf”,&amp;(double)x),不要忘了 &amp;和lf!!!</li>
+<li>
+<p>1.<strong>出栈序列的合法性</strong></p>
+<p>给定一个最大容量为 <em>M</em> 的堆栈，将 <em>N</em> 个数字按 1, 2, 3, ..., <em>N</em> 的顺序入栈，允许按任何顺序出栈，则哪些数字序列是不可能得到的？例如给定 <em>M</em>=5、<em>N</em>=7，则我们有可能得到{ 1, 2, 3, 4, 5, 6, 7 }，但不可能得到{ 3, 2, 1, 7, 5, 6, 4 }。</p>
+<h3 id="_1"><strong>输入格式：</strong></h3>
+<p>输入第一行给出 3 个不超过 1000 的正整数：<em>M</em>（堆栈最大容量）、<em>N</em>（入栈元素个数）、<em>K</em>（待检查的出栈序列个数）。最后 <em>K</em> 行，每行给出 <em>N</em> 个数字的出栈序列。所有同行数字以空格间隔。</p>
+<h3 id="_2"><strong>输出格式：</strong></h3>
+<p>对每一行出栈序列，如果其的确是有可能得到的合法序列，就在一行中输出<code>YES</code>，否则输出<code>NO</code>。</p>
+<h3 id="_3"><strong>输入样例：</strong></h3>
+<p>```
+5 7 5
+1 2 3 4 5 6 7
+3 2 1 7 5 6 4
+7 6 5 4 3 2 1
+5 6 4 3 7 2 1
+1 7 6 5 4 3 2</p>
+<p>```</p>
+<h3 id="_4"><strong>输出样例：</strong></h3>
+<p><code>YES
+NO
+NO
+YES
+NO</code></p>
+</li>
+</ol>
+<div class="codehilite"><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">push</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">[],</span><span class="kt">int</span><span class="w"> </span><span class="n">top</span><span class="p">,</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">a</span><span class="p">[</span><span class="n">top</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
+<span class="w">    </span><span class="n">top</span><span class="o">++</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">top</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">;</span>
+<span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d %d %d&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">m</span><span class="p">,</span><span class="o">&amp;</span><span class="n">n</span><span class="p">,</span><span class="o">&amp;</span><span class="n">k</span><span class="p">);</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">m</span><span class="p">];</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">[</span><span class="n">n</span><span class="p">];</span><span class="w"> </span><span class="c1">//save scanf</span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">k</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">top</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">cnt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">end</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="c1">//if 1,printf No</span>
+<span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;</span><span class="n">m</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">b</span><span class="p">[</span><span class="n">j</span><span class="p">]);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">while</span><span class="p">(</span><span class="n">top</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="c1">//empty max = 5</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="n">top</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">push</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">top</span><span class="p">,</span><span class="n">x</span><span class="p">);</span>
+<span class="w">            </span><span class="n">x</span><span class="o">++</span><span class="p">;</span>
+<span class="w">            </span><span class="k">while</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">top</span><span class="mi">-1</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">b</span><span class="p">[</span><span class="n">cnt</span><span class="p">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">top</span><span class="o">&gt;</span><span class="mi">0</span><span class="w"> </span><span class="p">)</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="n">cnt</span><span class="o">++</span><span class="p">;</span>
+<span class="w">                </span><span class="n">top</span><span class="o">--</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">cnt</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">7</span><span class="p">)</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Yes</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">                </span><span class="n">end</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">end</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;No</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<ul>
+<li>
+<p>2.<strong>Gram-Schmidt算法</strong></p>
+<p>Gram-Schmidt算法用来确定一组 <em>n</em> 向量 <em>a</em>1,⋯,<em>ak</em> 是否为线性无关的。</p>
+<p>给定 <em>n</em> 向量 <em>a</em>1,⋯,<em>ak</em>，令 <em>q</em>0 为 <em>n</em> 维零向量，对于 <em>i</em>=1,⋯,<em>k</em>，</p>
+<ol>
+<li>正交化：<em>q</em>~<em>i</em>=<em>ai</em>−(<em>q</em>1<em>T</em><em>ai</em>)<em>q</em>1−⋯−(<em>qi</em>−1<em>T</em><em>ai</em>)<em>qi</em>−1</li>
+<li>检验线性相关性：若 <em>q</em>~<em>i</em>=0，则算法结束，当前向量和之前的向量线性相关</li>
+<li>规范化：<em>qi</em>=∣∣<em>q</em>~<em>i</em>∣∣<em>q</em>~<em>i</em></li>
+</ol>
+<p>对于 <em>i</em>=1，由于 <em>q</em>0为零，步骤1简化为 <em>q</em>~1=<em>a</em>1。如果算法没有提前退出，则向量组 <em>a</em>1,⋯,<em>ak</em> 是线性无关的；否则，若算法在 <em>i</em>=<em>j</em> 时退出，即 <em>q</em>~<em>j</em>=0，即意味着 <em>aj</em> 是 <em>a</em>1,⋯,<em>aj</em>−1 的线性组合，向量组是线性相关的。</p>
+<p>注意，考虑到浮点计算误差，取<em>ϵ</em>=10−6，即当两数距离小于<code>1e-6</code>时视作相等。</p>
+<p>又：</p>
+<h3 id="euclid"><strong>Euclid范数</strong></h3>
+<p>一个 <em>n</em> 向量 <em>x</em> 的Euclid范数记为 ∣∣<em>x</em>∣∣ ：</p>
+<p>∣∣<em>x</em>∣∣=<em>x</em>12+<em>x</em>22+⋯+<em>xn</em>2</p>
+<p>也可以表示为向量与其自身做内积的平方根 ∣∣<em>x</em>∣∣=<em>xTx</em>。</p>
+<h3 id="_5"><strong>向量的内积（点积）</strong></h3>
+<p>两个 <em>n</em> 向量的内积（也称作点积）定义为如下的标量：</p>
+<p><em>aTb</em>=<em>a</em>1<em>b</em>1+<em>a</em>2<em>b</em>2+⋯+<em>an</em><em>bn</em></p>
+<p>即对应元素乘积的和。有的书上记做 <em>a</em>⋅<em>b</em> 。</p>
+<p>本题由<strong>张庆春</strong>制作数据并提供标程。</p>
+<h3 id="_6"><strong>输入格式:</strong></h3>
+<p>在第一行分别给出两个整数N，M。N表示向量的维度，M表示向量的个数。</p>
+<p>接下来M行给出M个向量，用浮点数表示，每个数字之间用空格分隔。</p>
+<p>（对于区分<code>float</code>和<code>double</code>的语言，建议使用<code>double</code>类型）</p>
+<h3 id="_7"><strong>输出格式:</strong></h3>
+<p>如果发现输入向量组是向量线性无关的，则输出 <code>NO</code>，并在第二行输出最终的 <em>q</em>，输出使用保留两位小数，每个数字之间一个空格。</p>
+<p>如果发现输入向量组是向量线性相关的，则输出<code>YES</code>，并接着输出算法运行到第几个向量（从1开始计数）时停止的。</p>
+<h3 id="1"><strong>输入样例1:</strong></h3>
+<p>```
+5 4
+1 2 -1 -2 -3
+2 -1 3 -2 7
+-1 3 2 4 28
+3 10 -2 1 1</p>
+<p>```</p>
+<h3 id="1_1"><strong>输出样例1:</strong></h3>
+<p>```
+NO
+0.52 0.36 0.49 0.59 -0.14</p>
+<p>```</p>
+<h3 id="2"><strong>输入样例2:</strong></h3>
+<p>```
+3 4
+0.1 1 2
+-0.3 0 -5
+3 0 -0.3
+0.2 -1 3</p>
+<p>```</p>
+<h3 id="2_1"><strong>输出样例2:</strong></h3>
+<p>在这里给出相应的输出。例如：</p>
+<p><code>YES 4</code></p>
+<p>```c</p>
+<h1 id="include">include<stdio.h></h1>
+<h1 id="include_1">include<math.h></h1>
+<p>int check(double p[],int n)
+{
+    int ret = 0;
+    int cnt = 0;
+    for(int i = 0;i &lt; n;i++)
+    {
+        if(p[i] &lt; 1e-6){cnt++;}
+    }
+    if(cnt == n){ret = 1;}
+    return ret;
+}
+double euclid(double a[],int n)  //get Euclid
+{
+    double product = 0;
+    for(int i = 0;i&lt;n;i++) 
+    {
+        product += a[i] * a[i];
+    }
+    double ret = sqrt(product);
+    return ret;
+}
+double inner_product(double q[],double a[],int n)
+{
+    double ret = 0;
+    for(int i = 0;i&lt;n;i++)
+    {
+        ret += a[i] * q[i];
+    }
+    return ret;
+}
+int main()
+{
+    int n,m;
+    scanf("%d %d",&amp;n,&amp;m);
+    double a[n],q[m][n];
+    for(int i = 0;i &lt; n;i++)
+    {
+        scanf("%lf",&amp;a[i]);
+    }
+    double d = euclid(a,n);
+    if(d &lt; 1e-6)
+    {
+        printf("YES 1");
+        goto end;
+    }
+    for(int i = 0;i &lt; n;i++)
+    {
+        q[0][i] = a[i]/d;
+    }
+    for(int j = 1; j &lt; m;j++)
+    {
+        for(int i = 0;i &lt; n;i++)
+        {
+            scanf("%lf",&amp;a[i]);
+        }
+        for(int i = 0;i &lt; n;i++)
+        {
+            q[j][i] = a[i];
+        }
+        for(int k = 0;k &lt; j;k++) //正交化
+        {
+            double tem = inner_product(q[k],a,n);
+            for(int i = 0;i &lt; n;i++)
+            {
+                q[j][i] -= tem * q[k][i];
+            }
+        }
+        if(check(q[j],n))
+        {
+            printf("YES %d",j+1);
+end:
+            break;
+        }
+        double d = euclid(q[j],n);
+        for(int i = 0;i &lt; n;i++)  //q[i]规范化
+        {
+            q[j][i] = q[j][i]/d;
+        } 
+        if(j == m - 1)
+        {
+            printf("NO\n");
+            printf("%.2f",q[j][0]);
+            for(int i = 1;i&lt;n;i++)
+            {
+                printf(" %.2f",q[j][i]);
+            }
+        }
+    }
+}
+```</p>
+</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.81fa17fe.min.js"></script>
+      
+    
+  </body>
+</html>
