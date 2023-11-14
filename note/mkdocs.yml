@@ -1,0 +1,21 @@
+site_name: SpringRain
+
+nav:
+  - 'Home': index.md
+  - 'Cnote': Cnote.md
+  - 'Csave' : Csave.md
+  - 'Function' : Function.md 
+
+markdown_extensions:
+  - admonition                    #支持注解
+  - codehilite:                   #代码块高亮
+      linenums: false              #代码块显示行号
+  - pymdownx.tasklist             #支持任务列表
+
+theme: 
+  name: 'material'                #使用material主题,需要pip安装mkdocs-material
+  language: 'zh'                  #使用中文
+  palette:
+    scheme: slate
+  feature:
+    tabs: true                    #使用上方tab栏（可改为false）
